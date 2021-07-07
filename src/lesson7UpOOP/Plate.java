@@ -2,12 +2,18 @@ package lesson7UpOOP;
 
 public class Plate {
     private int food;
-    private final int maxFood;
+    private int maxFood;
 
 
     public Plate(int food, int maxFood) {
-        this.food = food;
-        this.maxFood = maxFood;
+        if ((food > 0 || maxFood > 0) && food <= maxFood) {
+            this.food = food;
+            this.maxFood = maxFood;
+        } else {
+            System.out.print("Incorrect findings! Plate not created");
+            System.exit(1);
+        }
+
     }
 
     public void increaseFood(int income) {

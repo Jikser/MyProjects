@@ -13,7 +13,8 @@ public class Cat {
         if (stomach > 0) {
             this.stomach = stomach;
         } else {
-            System.out.print("Incorrect stomach");
+            System.out.print("Incorrect stomach! Cat not created");
+            System.exit(1);
         }
     }
 
