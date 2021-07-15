@@ -90,8 +90,10 @@ public class BattleMap extends JPanel {
         if (Logic.isGameFinished) {
             g.setColor(Color.RED);
             g.setFont(new Font("Tahoma", 10, 60));
-            g.drawString(Logic.message, panelWidth/4, panelWidth/2);
+            g.drawString(Logic.message, panelWidth / 4, panelWidth / 2);
         }
+
+
 
     }
 
